@@ -1,0 +1,60 @@
+Instructions
+
+The script was developed in Ubuntu 18.04 and python 3.6.7, and Spark 2.4.0
+
+The folder contains four files. The instructions are given per file. All the files might be allocated in the same path in S3. Make sure that you have the permissions to request more than 4 instances in AWS.
+
+---config.py
+
+do not need any modification ###Spark optimal configuration
+
+---Create_EMR_AWS.sh
+
+This file are instructions in bash shell to install AWS cli, configure AWS CLI, Create a cluster, send a job, terminate a cluster and copy the results from s3 (be careful!!! only copy the results, not the entire data set)
+
+line 9 - 10 = XXXX ###configure and establish the keys (generated from IAM roles in AWS)
+
+line 16 = XXXX ###environment variable of Ubuntu to define your AWS user
+
+line 21 = s3://FOLDER_FOR_LOGS/ ###define the folder of the logs
+
+line 21 = https://s3-us-west-2.amazonaws.com/FOLDER_WITH_FILE_TO_CONFIG_SPARK/myConfig.json ###location of the myConfig.json file, this file should be public and not private.
+
+### Once line 21 is generated it will deliver the cluster key j-GENERATED_KEY
+
+line 23 = j-GENERATED_KEY ###generated key from the previous step
+
+line 23 = s3://FOLDER_FOR_FILES/TestCloudSparkEMR_firefox_geocode.py ###define the location of the file TestCloudSparkEMR_firefox_geocode.py
+
+line 23 = s3://FOLDER_FOR_FILES/NL_geonames_triGram_townprovinces.csv ###define the path of the unigram gazeetter
+
+line 23 = s3://FOLDER_WITH_ALLJSON_FILES/*.json ###path where the JSON object files are located
+
+line 23 = s3://FOLDER_FOR_OUTPUT/_wordcount ###output path
+
+line 27 = j-GENERATED_KEY ###generated key to eliminate the EMR cluster (Careful!! This step eliminates the entire cluster)
+
+line 30 = s3://FOLDER_FOR_OUTPUT/ /LOCAL_FOLTER_COPY_S3_FILES/ ###line to copy the output files to the local machine
+
+
+---TestCloudSparkEMR_firefox_geocode.py
+
+line 19 = s3://FOLDER_WITH_ALLJSON_FILES/ ###Input files in s3
+
+line 27 = s3://FOLDER_FOR_FILES/ ### Gazetteer with unigram files
+
+line 66,71,75,78,81,84,87,90,93,96,99,102,105,108,111,122 = s3://FOLDER_FOR_OUTPUT/ ###Path of the output location in s3
+
+
+---ExampleGazetteer.csv
+
+###Example of the gazetteer used to develop this code
+
+
+
+
+
+
+
+
+
