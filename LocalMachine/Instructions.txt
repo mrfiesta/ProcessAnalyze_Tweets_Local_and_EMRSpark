@@ -1,0 +1,64 @@
+Instructions
+
+The script was developed in Ubuntu 18.04 and python 3.6.7
+
+The folder contains five files. The instructions are given per file. All the files must be allocated in the same path.
+
+---config.py
+
+do not need any modification
+
+---database.ini
+
+modify the credentials of a postgreSQL DBMS
+
+---connectElephant.py
+
+This file connects to a PostgreSQL database the variables to change on this file are the following:
+
+line 6,32 = /PATH/ONYOURLOCAL/MACHINE/ ###Establish the path where the scripts are located
+
+line 31 = FIELD1, FIELD2, FIELD_N ###Column names to query in the database
+
+line 31 = _NAME_OF_DATABASE_
+
+line 31 = _COLUMN_LONGITUDE_
+
+line 31 = _COLUMN_LATITUDE_
+
+line 31 = The numbers 3.29 and 7.31 are the bounding box longitude coordinates for the Netherlands ###Change this to establish your own coordinates
+
+line 31 = The numbers 50.61 and 53.69 are the bounding box latitude coordinates for the Netherlands ###Change this to establish your own coordinates
+
+The script query the database and create a file named completefile.txt
+
+---Leviathan.py
+
+This file do not need any modification
+
+###This file applies the stemmer, tokenization, English lemmatizer and remove special regex such as URL's
+
+---SampleLaptopScenario.py
+
+This file applies the analysis line by line
+
+line 4 = /PATH/ONYOURLOCAL/MACHINE/ ###Establish the path where the scripts are located
+
+line 35 = this line connects to the database and applies the query ### do not need any change
+
+line 172 = ['im','looking','this'] ###print the co-occurrance for each term in the array ### this array terms must be changed depending on the research
+
+line 199 = ['im','looking','this'] ### array that contains elements for plotting
+
+The script creates two charts and one interactive html file 'base_map.html' with all the tweets displayed in a heatmap
+
+
+
+
+
+
+
+
+
+
+
