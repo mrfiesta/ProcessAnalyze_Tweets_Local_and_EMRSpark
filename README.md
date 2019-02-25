@@ -46,7 +46,7 @@ The instructions to change variables are inside the instructions.txt
 
 * **Linux**: Tested on Ubuntu 18.04
 
-## Installation
+## Tools Required
 
 * **Local**
   * python libraries (pandas, polyglot, nltk, matplotlib, folium, psycopg2)
