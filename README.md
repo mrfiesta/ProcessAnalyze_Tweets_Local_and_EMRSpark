@@ -54,5 +54,5 @@ The instructions to change variables are inside the instructions.txt
 * **On EMR**
   * AWS CLI installed and configured
   * Have permission to request more than 4 instances on AWS
-  * Access ey and Secret access key from AWS
+  * Access key and Secret access key from AWS
 
