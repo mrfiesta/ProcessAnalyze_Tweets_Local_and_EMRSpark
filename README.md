@@ -25,7 +25,7 @@ The instructions to change variables are inside the instructions.txt
 
 ### Amazon EMR
 
-The file Create_EMR_AWScli.sh contains the instructions to configure CLI and to install a cluster in EMR with Spark. Also to sent a pyspark script file that contains a script that process raw Twitter data the variables that have to be adapted to be replicated. The cloud EMR spark gives the instructions to start a cluster in Amazon CLI with ten m4.4xlarge instances (requires to have permission from AMS to request ten instances) and to run it in cluster mode. Also contain instructuions to configure the Amazon CLI in an Ubuntu OS 18.04.
+The file Create_EMR_AWScli.sh contains the instructions to configure CLI and to install a cluster in EMR with Spark. Also to sent a pyspark script file that contains a script that process raw Twitter data the variables that have to be adapted to be replicated. The cloud EMR spark gives the instructions to start a cluster in Amazon CLI with ten m4.4xlarge instances (requires to have permission from AMS to request ten instances) and to run it in cluster mode. Also contain instructuions to configure the Amazon CLI in an Ubuntu.
 
 The file TestCloudSparkEMR_firefox_geocode.py do the following:
 
@@ -44,8 +44,10 @@ The instructions to change variables are inside the instructions.txt
 
 ## Platforms
 
-* Linux: Tested on Ubuntu 18.04
+* **Linux**: Tested on Ubuntu 18.04
 
 ## Installation
 
+* **EMR**
+  * AWS CLI
 
