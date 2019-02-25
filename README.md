@@ -49,7 +49,7 @@ The instructions to change variables are inside the instructions.txt
 ## Installation
 
 * **Local**
- * python libraries (pandas, polyglot, nltk, matplotlib, folium, psycopg2)
+  * python libraries (pandas, polyglot, nltk, matplotlib, folium, psycopg2)
 
 * **EMR**
   * AWS CLI
