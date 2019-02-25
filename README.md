@@ -4,7 +4,8 @@ This repository analize Tweets from two perspectives, with a local machine and a
 
 Laptop
 
-The local machine scenario extract geotagged dataset from a PostgreSQL server and apply a Spatial Query, Remove specific users, Clean symbols, special characters and URL's. Then detect the language of each Tweet, tokenize, remove stop words in dutch and english and steam all the tokens. Finally the script count words, hashtags, bigrams and apply a co-occurrence matrix with selected Terms.
+The laptop option, focus on explore a stored dataset with only the geotagged Tweets. By apppliying some regex methods, SQLqueriying, NLP techniques, plotting and mapping. This option is for newbies that want to explore a stored Twitter dataset.
+
 The file SampleLaptopScenario.py do the following:
 
 1)connect and extract tweets from a PostgreSQL database
