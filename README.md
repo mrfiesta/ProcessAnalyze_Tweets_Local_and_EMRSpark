@@ -21,8 +21,6 @@ The file SampleLaptopScenario.py do the following:
 * Deliver a co-occurance matrix within specific element in an array
 * Create two charts with most frequent terms in Dutch and the count of elements in dutch and english, also provide a HTML file with an interactive visualization of the geotagged tweets per day.
 
-The instructions to change variables are inside the instructions.txt
-
 ### Amazon EMR
 
 The file Create_EMR_AWScli.sh contains the instructions to configure CLI and to install a cluster in EMR with Spark. Also to sent a pyspark script file that contains a script that process raw Twitter data the variables that have to be adapted to be replicated. The cloud EMR spark gives the instructions to start a cluster in Amazon CLI with ten m4.4xlarge instances (requires to have permission from AMS to request ten instances) and to run it in cluster mode. Also contain instructuions to configure the Amazon CLI in an Ubuntu.
@@ -40,11 +38,14 @@ The file TestCloudSparkEMR_firefox_geocode.py do the following:
 * Eextract all unigrams and match them with the gazetteer (geocoding), 
 * Deliver two files with the most frequent words (JSON) and the geocoded tweets with latitude and longitude coordinates (CSV), and the necessary data to create the co-occurrence matrix (JSON).
 
-The instructions to change variables are inside the instructions.txt
 
 ## Platforms
 
 * **Linux**: Tested on Ubuntu 18.04
+
+## Instructions
+
+Both folders contain a Instructions.txt file which contains the instructions to change the variables ahd paths in your local machine or EMR cluster.
 
 ## Tools Required
 
