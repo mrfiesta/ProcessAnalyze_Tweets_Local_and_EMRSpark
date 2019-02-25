@@ -1,6 +1,6 @@
 Instructions
 
-The scripts were developed in Ubuntu 18.04 and python 3.6.7
+The scripts were developed in Ubuntu 18.04 and python 3.6.7. The field names of each column has been modified from the original Twitter. 
 
 The folder contains five files. The instructions are given per file. All the files must be allocated in the same path.
 
