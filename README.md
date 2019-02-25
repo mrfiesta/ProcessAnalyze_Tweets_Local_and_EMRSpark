@@ -23,9 +23,7 @@ The file SampleLaptopScenario.py do the following:
 
 ### Amazon EMR
 
-The file Create_EMR_AWScli.sh contains the instructions to configure CLI and to install a cluster in EMR with Spark. Also to sent a pyspark script file that contains a script that process raw Twitter data the variables that have to be adapted to be replicated. The cloud EMR spark gives the instructions to start a cluster in Amazon CLI with ten m4.4xlarge instances (requires to have permission from AMS to request ten instances) and to run it in cluster mode. Also contain instructuions to configure the Amazon CLI in an Ubuntu.
-
-The file TestCloudSparkEMR_firefox_geocode.py do the following:
+Instructions and example of how to start a EMR cluster and a script to do the following:
 
 * Read all the records as JSON objects, 
 * Remove special characters (non alphanumeric),
@@ -38,6 +36,7 @@ The file TestCloudSparkEMR_firefox_geocode.py do the following:
 * Eextract all unigrams and match them with the gazetteer (geocoding), 
 * Deliver two files with the most frequent words (JSON) and the geocoded tweets with latitude and longitude coordinates (CSV), and the necessary data to create the co-occurrence matrix (JSON).
 
+The cloud EMR spark gives the instructions to start a cluster in Amazon CLI with ten m4.4xlarge instances (requires to have permission from AMS to request ten instances) and to run it in cluster mode. Also contain instructuions to configure the Amazon CLI in an Ubuntu.
 
 ## Platforms
 
