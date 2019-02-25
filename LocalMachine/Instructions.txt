@@ -20,15 +20,15 @@ line 6,32 = /PATH/ONYOURLOCAL/MACHINE/ ###Establish the path where the scripts a
 
 line 31 = FIELD1, FIELD2, FIELD_N ###Column names to query in the database
 
-line 31 = _NAME_OF_DATABASE_
+line 31 = _NAME_OF_DATABASE_ ###Name of the database in SQL
 
-line 31 = _COLUMN_LONGITUDE_
+line 31 = _COLUMN_LONGITUDE_ ###Column name with the longitude records
 
-line 31 = _COLUMN_LATITUDE_
+line 31 = _COLUMN_LATITUDE_ ###Column name with the latitude records
 
-line 31 = The numbers 3.29 and 7.31 are the bounding box longitude coordinates for the Netherlands ###Change this to establish your own coordinates
+line 31 = The numbers 3.29 and 7.31 are the bounding box longitude coordinates for the Netherlands ###Change this to establish your own coordinates or boundary box of your country
 
-line 31 = The numbers 50.61 and 53.69 are the bounding box latitude coordinates for the Netherlands ###Change this to establish your own coordinates
+line 31 = The numbers 50.61 and 53.69 are the bounding box latitude coordinates for the Netherlands ###Change this to establish your own coordinates or boundary box of your country
 
 The script query the database and create a file named completefile.txt
 
@@ -46,7 +46,7 @@ line 4 = /PATH/ONYOURLOCAL/MACHINE/ ###Establish the path where the scripts are 
 
 line 35 = this line connects to the database and applies the query ### do not need any change
 
-line 172 = ['im','looking','this'] ###print the co-occurrance for each term in the array ### this array terms must be changed depending on the research
+line 172 = ['im','looking','this'] ###print the co-occurrance for each term in the array, this array terms must be changed depending on the research
 
 line 199 = ['im','looking','this'] ### array that contains elements for plotting
 
