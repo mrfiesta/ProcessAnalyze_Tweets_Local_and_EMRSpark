@@ -21,6 +21,7 @@ The file SampleLaptopScenario.py do the following:
 * Deliver a co-occurance matrix within specific element in an array
 * Create two charts with most frequent terms in Dutch and the count of elements in dutch and english, also provide a HTML file with an interactive visualization of the geotagged tweets per day.
 
+
 ### Amazon EMR
 
 Instructions and example of how to start a EMR cluster and a script to do the following:
