@@ -3,7 +3,7 @@
 import json
 import os
 #####Specify the folder where the file will be saved and where the credentials are
-os.chdir('/path/onyourlocal/Machine/')
+os.chdir('/PATH/ONYOURLOCAL/MACHINE/')
 from config import config
 import fileinput
 import psycopg2
@@ -26,10 +26,10 @@ def connect():
         # create a cursor
         cur = conn.cursor()
 
-        # Extract Database
+        # Extract Database, this example is set for the Netherlands
 
-        sql = "COPY (with t as (select tweet_id,tweet_text,tweet_created,user_id,tweet_lon,tweet_lat,lang_tsv from s6036740.latlong WHERE tweet_lon BETWEEN 3.29 AND 7.31 AND tweet_lat BETWEEN 50.61 AND 53.69) select json_agg(t) from t) TO STDOUT"
-        with open("/path/onyourlocal/Machine/completefile.txt", "w") as file:
+        sql = "COPY (with t as (select FIELD1, FIELD2, FIELD_N from _NAME_OF_DATABASE_ where _COLUMN_LONGITUDE_ between 3.29 and 7.31 and _COLUMN_LATITUDE_ between 50.61 AND 53.69) select json_agg(t) from t) TO STDOUT"
+        with open("/PATH/ONYOURLOCAL/MACHINE/completefile.txt", "w") as file:
             cur.copy_expert(sql, file)
 
         print('Extracting information from the database...')
