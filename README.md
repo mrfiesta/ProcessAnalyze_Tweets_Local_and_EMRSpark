@@ -49,9 +49,10 @@ The instructions to change variables are inside the instructions.txt
 ## Tools Required
 
 * **Local**
-  * python libraries (pandas, polyglot, nltk, matplotlib, folium, psycopg2)
+  * Python libraries (pandas, polyglot, nltk, matplotlib, folium, psycopg2)
 
 * **EMR**
-  * AWS CLI
+  * AWS CLI installed and configured
   * Have permission to request more than 4 instances on AWS
+  * Access ey and Secret access key from AWS
 
