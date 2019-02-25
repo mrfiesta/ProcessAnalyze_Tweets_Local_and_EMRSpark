@@ -48,6 +48,10 @@ The instructions to change variables are inside the instructions.txt
 
 ## Installation
 
+* **Local**
+ * python libraries (pandas, polyglot, nltk, matplotlib, folium)
+
 * **EMR**
   * AWS CLI
+  * Have permission to request more than 4 instances on AWS
 
