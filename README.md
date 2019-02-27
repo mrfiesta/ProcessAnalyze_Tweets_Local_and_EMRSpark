@@ -4,7 +4,7 @@ This repository analize Tweets from two perspectives, with a local machine and a
 
 ### Laptop
 
-The laptop option, focus on explore a stored dataset with only the geotagged Tweets. By apppliying some regex methods, SQLqueriying, NLP techniques, plotting and mapping. This option is for newbies that want to explore a stored Twitter dataset.
+The laptop option, focus on explore a stored dataset with only the geotagged Tweets. By apppliying some regex methods, SQLqueriying, NLP techniques, plotting and mapping. This option is for newbies that want to explore a stored Twitter dataset, but the request to the database require password and a user. If a user want to process raw tweets it is necessary modify the local script to change the column name variables.
 
 The file SampleLaptopScenario.py do the following:
 
