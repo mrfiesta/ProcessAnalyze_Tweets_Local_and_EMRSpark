@@ -34,7 +34,7 @@ Instructions and example of how to start a EMR cluster and a script to do the fo
 * Tokenize all the elements, 
 * Remove the stop words in Dutch and English, 
 * Group and count all the words in the data set (frequency),
-* Eextract all unigrams and match them with the gazetteer (geocoding), 
+* Extract all unigrams and match them with the gazetteer (geocoding), 
 * Deliver two files with the most frequent words (JSON) and the geocoded tweets with latitude and longitude coordinates (CSV), and the necessary data to create the co-occurrence matrix (JSON).
 
 The cloud EMR spark gives the instructions to start a cluster in Amazon CLI with ten m4.4xlarge instances (requires to have permission from AMS to request ten instances) and to run it in cluster mode. Also contain instructuions to configure the Amazon CLI in an Ubuntu.
